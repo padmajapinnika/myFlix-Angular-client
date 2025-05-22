@@ -1,0 +1,27 @@
+.app-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  background-color: #800000 !important;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 16px;
+}
+
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.main-content {
+  margin-top: 64px; /* space for toolbar height */
+  padding: 16px;
+}

@@ -1,1 +1,17 @@
-<router-outlet></router-outlet>
+<mat-toolbar *ngIf="isLoggedIn" color="primary" class="app-toolbar">
+  <span class="app-title">MyFlix</span>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/movies" routerLinkActive="active-link" aria-label="Movies">
+    Movies
+  </button>
+  <button mat-button routerLink="/profile" routerLinkActive="active-link" aria-label="Profile">
+    Profile
+  </button>
+  <button mat-button (click)="logout()" aria-label="Logout">
+    Logout
+  </button>
+</mat-toolbar>
+
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>

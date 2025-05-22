@@ -1,0 +1,26 @@
+.dialog-container {
+  background-color: #fffafa;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 500px;
+  color: #333;
+}
+
+.dialog-title {
+  color: #800000;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.dialog-content {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+}
