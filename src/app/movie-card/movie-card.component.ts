@@ -1,3 +1,9 @@
+/**
+ * The MovieCardComponent displays a list of movies and allows users to view movie details, 
+ * manage their favorite movies, and interact with the backend API for user and movie data.
+ * It provides functionality for adding/removing movies to/from the user's favorite list 
+ * and viewing movie details through a dialog.
+ */
 import { Component, OnInit } from '@angular/core';
 import { FetchApiDataService } from '../fetch-api-data.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -5,13 +11,18 @@ import { MatDialog } from '@angular/material/dialog';
 import { DirectorDialogComponent } from '../director-dialog/director-dialog.component';
 import { GenreDialogComponent } from '../genre-dialog/genre-dialog.component';
 import { MovieDetailsDialogComponent } from '../movie-details-dialog/movie-details-dialog.component';
-
+/**
+ * A component that handles the display of movies, management of user favorites, 
+ * and interaction with movie details via a dialog.
+ * 
+ */
 @Component({
   selector: 'app-movie-card',
   templateUrl: './movie-card.component.html',
   styleUrls: ['./movie-card.component.scss'],
 })
 export class MovieCardComponent implements OnInit {
+   
   movies: any[] = [];
 
   constructor(
